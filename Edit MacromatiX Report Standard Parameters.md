@@ -18,7 +18,8 @@ By default, the extension stores settings files in the user's AppData folder. To
 
 1. **Option 1: Using Environment Variables**
    - Set the `MACROMATIX_WORKSPACE` environment variable to your desired local directory path
-   - Example: `C:\MyProjects\ReportSettings`
+   - Example (Windows): `C:\MyProjects\ReportSettings`
+   - Example (Unix-style): `/home/user/projects/ReportSettings`
    - The extension will use this directory for storing all settings files
 
 2. **Option 2: Using Configuration File**
@@ -26,9 +27,10 @@ By default, the extension stores settings files in the user's AppData folder. To
    - Add the workspace path configuration:
      ```xml
      <configuration>
-       <workspace>C:\MyProjects\ReportSettings</workspace>
+       <workspace>/path/to/your/workspace</workspace>
      </configuration>
      ```
+   - Replace `/path/to/your/workspace` with your actual directory path
    - The extension will automatically detect and use this configuration
 
 3. **Option 3: Project-Relative Path**
