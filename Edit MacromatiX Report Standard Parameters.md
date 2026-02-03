@@ -46,7 +46,8 @@ The extension stores the following files in the configured workspace directory:
 - `Settings.json` - General extension settings
 
 If no custom workspace is configured, files are stored in:
-- `%APPDATA%\MacromatiX\ReportStandardParameters\`
+- Windows: `%APPDATA%\MacromatiX\ReportStandardParameters\`
+- macOS/Linux: `~/.config/MacromatiX/ReportStandardParameters/`
 
 ## How to use
 After installation, three menu items are added to the Tools menu:
