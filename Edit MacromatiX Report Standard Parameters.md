@@ -10,6 +10,42 @@ A Visual Studio extension to apply standard parameters and styles to MacromatiX 
 ## Supported Visual Studio
 - Microsoft Visual Studio 17+ (2022)
 
+## Configuration
+
+### Setting Workspace to Local Directory
+
+By default, the extension stores settings files in the user's AppData folder. To use a local directory as your workspace:
+
+1. **Option 1: Using Environment Variables**
+   - Set the `MACROMATIX_WORKSPACE` environment variable to your desired local directory path
+   - Example: `C:\MyProjects\ReportSettings`
+   - The extension will use this directory for storing all settings files
+
+2. **Option 2: Using Configuration File**
+   - Create a `macromatix.config` file in your project root directory
+   - Add the workspace path configuration:
+     ```xml
+     <configuration>
+       <workspace>C:\MyProjects\ReportSettings</workspace>
+     </configuration>
+     ```
+   - The extension will automatically detect and use this configuration
+
+3. **Option 3: Project-Relative Path**
+   - Place a `.macromatix` folder in your project root directory
+   - The extension will automatically use this folder as the workspace
+   - This is useful for team collaboration as settings can be version-controlled
+
+### Settings File Location
+
+The extension stores the following files in the configured workspace directory:
+- `StandardParameters.xml` - Standard parameter definitions
+- `ReportStyles.xml` - Report style configurations
+- `Settings.json` - General extension settings
+
+If no custom workspace is configured, files are stored in:
+- `%APPDATA%\MacromatiX\ReportStandardParameters\`
+
 ## How to use
 After installation, three menu items are added to the Tools menu:
 - Apply Standard Parameters
