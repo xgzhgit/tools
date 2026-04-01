@@ -1,24 +1,23 @@
 # Set Connection
 Use Tools > `Set Connection` to configure the Microsoft SQL Server connection used by the SQL formatting features.
 ### Steps
-#### 1.	In Visual Studio, open Tools > Set Connection.
-#### 2.	Enter or update the required connection details:
-  •	Server
-  •	Database
-  •	Authentication
-  •	Username
-  •	Password
-  •	Connection Timeout
-  •	Command Timeout
-  •	Encrypt
-  •	Trust Server Certificate
-
-#### 3.	Click OK to save the configuration.
+1.	In Visual Studio, open Tools > Set Connection.
+2.	Enter or update the required connection details:
+  +	Server
+  +	Database
+  +	Authentication
+  +	Username
+  +	Password
+  +	Connection Timeout
+  +	Command Timeout
+  +	Encrypt
+  +	Trust Server Certificate
+ 3.	Click OK to save the configuration.
 ###  Notes
 
-•	Server and Database are required.
-•	If SQL authentication is selected, Username is also required.
-•	If Windows authentication is selected, Username and Password are disabled.
++	Server and Database are required.
++	If SQL authentication is selected, Username is also required.
++	If Windows authentication is selected, Username and Password are disabled.
 ---
 
 # Apply SQL Complete
@@ -41,12 +40,12 @@ What this command does
 
    
 ### Notes
-•	This command updates the content in the active editor only.
-•	The file is not saved automatically after formatting.
-•	Save the file manually if the result is correct.
++	This command updates the content in the active editor only.
++	The file is not saved automatically after formatting.
++	Save the file manually if the result is correct.
 ---
 Summary
-•	Use Tools > Set Connection to configure the SQL Server connection.
-•	Use Tools > Apply SQL Complete to apply SQL formatting and review standards to the current SQL file.
-•	After applying formatting, review the changes and save the file manually.
++	Use Tools > Set Connection to configure the SQL Server connection.
++	Use Tools > Apply SQL Complete to apply SQL formatting and review standards to the current SQL file.
++	After applying formatting, review the changes and save the file manually.
 If needed, this can also be rewritten as a README.md style document for the repository.
